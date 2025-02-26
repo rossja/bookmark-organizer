@@ -17,7 +17,7 @@ from bookmark_organizer.exporter import BookmarkExporter
 
 # Create Typer app
 app = typer.Typer(
-    name="bookmark-organizer",
+    name="bookmark_organizer",
     help="A tool to organize and clean up browser bookmarks",
     add_completion=False,
 )
@@ -256,15 +256,15 @@ def show_info():
     console.print("  • Export to various formats (HTML, JSON)\n")
 
     console.print("[bold]Usage:[/]")
-    console.print("  bookmark-organizer import path/to/bookmarks.html")
-    console.print("  bookmark-organizer validate path/to/bookmarks.html")
+    console.print("  bookmark_organizer import path/to/bookmarks.html")
+    console.print("  bookmark_organizer validate path/to/bookmarks.html")
     console.print(
-        "  bookmark-organizer organize path/to/bookmarks.html -o organized.html\n")
+        "  bookmark_organizer organize path/to/bookmarks.html -o organized.html\n")
 
     console.print("[bold]Get help on specific commands:[/]")
-    console.print("  bookmark-organizer import --help")
-    console.print("  bookmark-organizer validate --help")
-    console.print("  bookmark-organizer organize --help")
+    console.print("  bookmark_organizer import --help")
+    console.print("  bookmark_organizer validate --help")
+    console.print("  bookmark_organizer organize --help")
 
 
 if __name__ == "__main__":

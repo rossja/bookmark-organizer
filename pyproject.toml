@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Jason Ross", email = "algorythm@gmail.com"},
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -46,12 +46,12 @@ dev = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/bookmark-organizer"
-"Bug Tracker" = "https://github.com/yourusername/bookmark-organizer/issues"
-"Documentation" = "https://github.com/yourusername/bookmark-organizer#readme"
+"Homepage" = "https://github.com/rossja/bookmark-organizer"
+"Bug Tracker" = "https://github.com/rossja/bookmark-organizer/issues"
+"Documentation" = "https://github.com/rossja/bookmark-organizer#readme"
 
 [project.scripts]
-bookmark-organizer = "bookmark_organizer.main:app"
+bookmark_organizer = "bookmark_organizer.main:app"
 
 [tool.hatch.build.targets.wheel]
 packages = ["bookmark_organizer"]

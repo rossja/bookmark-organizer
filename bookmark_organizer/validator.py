@@ -337,6 +337,6 @@ class BookmarkValidator:
             r'localhost|'  # localhost
             r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # or ipv4
             r'(?::\d+)?'  # optional port
-            r'(?:/?|[/?]\S+), re.IGNORECASE)
+            r'(?:/?|[/?]\S+))', re.IGNORECASE)
 
         return bool(pattern.match(url))
