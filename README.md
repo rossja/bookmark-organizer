@@ -63,16 +63,16 @@ You can run the bookmark organizer using `uv run`:
 
 ```bash
 # Basic usage
-uv run bookmark-organizer --help
+uv run bookmark_organizer --help
 
 # Or run specific commands
-uv run bookmark-organizer import path/to/bookmarks.html
+uv run bookmark_organizer import path/to/bookmarks.html
 ```
 
 Alternatively, if you installed in development mode with `uv pip install -e .`, you can run the commands directly:
 
 ```bash
-bookmark-organizer --help
+bookmark_organizer --help
 ```
 
 ### Command Line Interface
@@ -81,32 +81,32 @@ bookmark-organizer --help
 
 ```bash
 # Import and analyze bookmarks
-uv run bookmark-organizer import path/to/bookmarks.html
+uv run bookmark_organizer import path/to/bookmarks.html
 
 # Validate bookmarks (check for broken links and duplicates)
-uv run bookmark-organizer validate path/to/bookmarks.html
+uv run bookmark_organizer validate path/to/bookmarks.html
 
 # Organize bookmarks into a better structure
-uv run bookmark-organizer organize path/to/bookmarks.html -o organized_bookmarks.html
+uv run bookmark_organizer organize path/to/bookmarks.html -o organized_bookmarks.html
 ```
 
 #### Extended Options
 
 ```bash
 # Get help on available commands
-uv run bookmark-organizer --help
+uv run bookmark_organizer --help
 
 # Get help on a specific command
-uv run bookmark-organizer organize --help
+uv run bookmark_organizer organize --help
 
 # Organize and remove broken links
-uv run bookmark-organizer organize path/to/bookmarks.html --remove-broken
+uv run bookmark_organizer organize path/to/bookmarks.html --remove-broken
 
 # Organize and merge duplicates
-uv run bookmark-organizer organize path/to/bookmarks.html --merge-duplicates
+uv run bookmark_organizer organize path/to/bookmarks.html --merge-duplicates
 
 # Export to JSON format
-uv run bookmark-organizer organize path/to/bookmarks.html -f json -o bookmarks.json
+uv run bookmark_organizer organize path/to/bookmarks.html -f json -o bookmarks.json
 ```
 
 ### Python API
